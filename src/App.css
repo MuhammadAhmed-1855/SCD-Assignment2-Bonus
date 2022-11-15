@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::placeholder {
+  color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Wrapper {
+  height: 100vh;
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(11, 243, 231);
+  transition: 0.8s all;
+}
+
+h1 {
+  margin-bottom: 1.5%;
+  color: white;
+  font-weight: normal;
+}
+
+.Container {
+  width: 350px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.ThemeChanger {
+  display: flex;
+  align-items: center;
+}
+
+.ThemeButton {
+  all: unset;
+  cursor: pointer;
+}
+
+input {
+  padding: 25px;
+  color: rgb(69, 63, 63);
+  font-size: 1em;
+  cursor: pointer;
+  width: 70px;
+  background-color: aliceblue;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  margin: 0.2em;
+}
+
+.FirstRow, .SecondRow, .ThirdRow, .FourthRow, .FifthRow, .SixthRow {
+  margin-bottom: 4px;
+}
+
+#Result {
+  width: 222.5px;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(37, 35, 39);
+  color: #fff;
+}
+
+#ClearButton {
+  background-color: rgb(255, 42, 42);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#Operation {
+  background-color: rgb(57, 201, 194);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Operation:hover {
+  background-color: rgb(37, 35, 39);
+  color: #fff;
+}
+
+img {
+  width: 30px;
+}
+
+#ConcludedResult {
+  width: 300px;
+  height: 50px;
+  padding: 25px;
+  background-color: aliceblue;
+  font-size: 1em;
+  cursor: pointer;
+  color: rgb(143, 135, 150);
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  margin: 0.2em;
 }
